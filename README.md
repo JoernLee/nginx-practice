@@ -1,0 +1,4 @@
+主要用于学习实践Nginx基本配置
+
+- 本项目以nginx的base镜像通过docker-compose的方式来进行练习，只需要本地安装docker引擎与nginx的官方镜像即可
+- 通过执行docker-compose up [service-name] 来运行指定的nginx配置文件，通过访问本地8002端口来映射访问容器的nginx服务端口
