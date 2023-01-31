@@ -36,3 +36,9 @@ services:
       - "8002:80"
     volumes:
       - ./load-balance.conf:/etc/nginx/conf.d/default.conf
+  request-filter:
+    image: nginx
+    ports:
+      - "8002:80"
+    volumes:
+      - ./request-filter.conf:/etc/nginx/conf.d/default.conf
