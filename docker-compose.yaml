@@ -24,3 +24,9 @@ services:
       - "8002:80"
     volumes:
       - ./header.conf:/etc/nginx/conf.d/default.conf
+  dynamic-static:
+    image: nginx
+    ports:
+      - "8002:80"
+    volumes:
+      - ./dynamic-static-separation.conf:/etc/nginx/conf.d/default.conf
