@@ -30,3 +30,9 @@ services:
       - "8002:80"
     volumes:
       - ./dynamic-static-separation.conf:/etc/nginx/conf.d/default.conf
+  load-balance:
+    image: nginx
+    ports:
+      - "8002:80"
+    volumes:
+      - ./load-balance.conf:/etc/nginx/conf.d/default.conf
