@@ -60,3 +60,9 @@ services:
       - "8002:80"
     volumes:
       - ./image-process.conf:/etc/nginx/conf.d/default.conf
+  diy-web:
+    image: nginx
+    ports:
+      - "8002:80"
+    volumes:
+      - ./diy-web.conf:/etc/nginx/conf.d/default.conf
